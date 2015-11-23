@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sigma Chi - VSU</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+                $("#upto-calendar-container-AZAO").hide();
+                $('#show').click(function () {
+                
+               $('#song').toggle();
+                    if($('#song').is(':visible')) {
+                        $('#show').text('Hide');        
+                    } 
+                    else{
+                        $('#show').text('Show');        
+                    } 
+                    //$('#song').toggle();
+                });
+                $("#ok").click(function(){
+                     var username=$('#usr').val();
+                     var password=$('#pwd').val();
+                       if($("#usr").val()==="sigmachivsu" && $('#pwd').val()==="ihsv1855"){
+                          $("#user").hide();
+                          $("#upto-calendar-container-AZAO").show();
+                      }
+                      else{
+                          alert("Wrong username or password");
+                          $("#usr").text("");
+                          $('#usr').text("");
+                      }
+                });
+                $("#cancel").click(function(){
+                     $("#usr").val("");
+                     $("#pwd").val("");
+                });
+                $("#signout").click(function(){
+                     $("#upto-calendar-container-AZAO").hide();
+                     $("#user").show();
+                     $("#usr").val("");
+                     $("#pwd").val("");
+                });
+        });
+    </script>
+    <style>
+    
+    body{
+        color: #FFD700;
+        background-color: #fff;
+        
+    }
+    #user{
+        color: #FFD700;
+    }
+    .navbar-default .navbar-nav > li > a {
+          color: #FFD700;
+          
+    }
+    .navbar-default .navbar-brand {
+      color: #FFD700;
+  
+    }
+    #newpanel,#newpanel2,#newpanel3{
+      background-color: #00506f;
+      color: #FFD700;
+  
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+      max-width: none;
+    }
+    .btn-primary{
+        background: #00a0df;
+    }
+    .panel > .panel-heading{
+        background-color: #00a0df;
+    }
+    #head{
+        color:#e5c100;
+    }
+    .lincos{
+        color: #FFD700;
+    }
+    #uno {
+      width: 200px;
+      height: 200px;
+      background: #eee;
+    }
+    .btn-primary{
+        background: #00506f;
+    }
+    .fit{
+        background: url(gallery/backcruz.png) center top no-repeat;
+        max-width: 100%;
+        max-height: 100%;
+        font-size: 14;
+        color:#3B6AA0 ;
+        background-size: auto;
+    }
+    </style>
+    <link rel="shortcut icon" href="gallery/flag.jpeg">
+</head>
+
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" style = background-color:#00506f>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        
+      </button>
+      <a class="navbar-brand" href="https://preview.c9.io/pevargasg/sx/home/home.html">ΣΧ</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a href="https://preview.c9.io/pevargasg/sx/home/home.html"><b>HOME</b></a></li>
+        <li><a href="#"><B>ABOUT US</B></a></li>
+        <li class="dropdown active">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><B>LAMBDA MU</B><span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://preview.c9.io/pevargasg/sx/home/members.html"><b>Members</b></a></li>
+            <li><a href="https://preview.c9.io/pevargasg/sx/home/gallery.html">Photo Gallery</a></li>
+            <li><a href="https://preview.c9.io/pevargasg/sx/home/sweetheart.html">Sweet Heart</a></li>
+            <li class="divider"></li>
+            <li><a href="https://preview.c9.io/pevargasg/sx/home/RUSH.html">RUSH</a></li>
+            <li class="divider"></li>
+            <li class="active"><a href="#">Events</a><span class="sr-only">(current)</span></li>
+            
+          </ul>
+        </li>
+        <li><a href="https://preview.c9.io/pevargasg/sx/home/phila.html"><B>PHILANTROPY</B></a></li>
+        <li><a href="https://preview.c9.io/pevargasg/sx/home/RUSH.html"><B>RUSH</B></a></li>
+        <li><a href="https://preview.c9.io/pevargasg/sx/home/Contact.html"><B>CONTACT</B></a></li>
+       </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+      </form>
+      
+    </div>
+  </div>
+</nav>
+
+    <!-- Header Carousel -->
+    <header>
+    </header>
+
+    <!-- Page Content -->
+    
+        <!-- Marketing Icons Section -->
+        <div class="col-lg-12">
+            <div class="col-lg-12">
+                
+                <h1 class="page-header" id=head>
+                     ΣΧ Lambda Mu Events
+                </h1>
+            </div>
+            <div class="col-md-3  visilble-md pull-left" id = "rightc">
+            </div>
+            
+            <div class="col-md-10">
+                <div class="panel panel-primary">
+                    <div class="panel-heading" id=newpanel>
+                        <h4><i class="glyphicon glyphicon-book"></i> CHAPTER EVENTS</h4>
+                    </div>
+                    <div class="panel-body center fit">
+                        <div> 
+                         
+                        <div id="upto-calendar-container-AZAO" class="upto-calendar-plugin">
+                            <center><a class="btn btn-primary" id="signout">SIGN OUT</a></center>
+                            <script>!function(c,b,a){function d(h){var e=document.getElementById("upto-calendar-container-"+c),f=document.createElement("SCRIPT"),g="https://upto.com/js/plugin.js";f.onreadystatechange=function(){if(f.readyState==="loaded"||f.readyState==="complete"){f.onreadystatechange=null;h()}};f.onload=function(){h()};f.setAttribute("src",g);e.parentNode.insertBefore(f,e)}d(function(){upto.init(c)})}("AZAO");</script></div>
+                        
+                        </div>
+                        <form  role="form" id="user">
+                        <div class="form-group">
+                        <h3 class="colores">Please enter the username and password to view the event schedule</h3>
+                          <label for="usr">Username:</label>
+                          <input type="text" class="form-control" id="usr">
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd">Password:</label>
+                          <input type="password" class="form-control" id="pwd">
+                        </div>
+                         <a class="btn btn-primary" id="ok">OK</a>
+                         <a class="btn btn-primary" id="cancel">CANCEL</a>
+                </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-2  visilble-md pull-right" id = "rightc">
+                <div class="panel panel-primary">
+                    <div class="panel-heading" id=newpanel3>
+                        <h4>QUICK LINKS <a href="https://instagram.com/sigmachi_vsu/" class=a:visited:"#FFD700"><i class="fa fa-instagram lincos"></i></a> <a href="https://www.facebook.com/groups/1535375520061529/?fref=ts" class=a:visited:"#FFD700"><i class="fa fa-facebook lincos"></i></a></h4>
+                            
+                        
+                    </div>
+                    <div class="panel-body">
+                          <div>&nbsp; &nbsp;&nbsp;<a href="http://sigmachi.org/"><img class="img-responsive" src="gallery/ofs.png"></a></div><p></p>
+                          <div>&nbsp; &nbsp;&nbsp;<a href="https://cor226.sslcert19.com/(S(a0fuaycyhqo3wvr1zn2p5mly))/PE/Login/Default.aspx"><img class="img-responsive" src="gallery/pledge.png"></a></div><p></p>
+                          <div>&nbsp; &nbsp;&nbsp;<a href="https://members.sigmachi.org/Shared_Content/Custom/Core_Content/Contacts/Sign_In.aspx?WebsiteKey=e03d4523-3e36-412b-a650-b6055eb03166&LoginRedirect=true&returnurl=%2f"><img class="img-responsive" src="gallery/updateinfro.png"></a></div><p></p>
+                          <div>&nbsp; &nbsp;&nbsp;<a href="http://www.valdosta.edu/student/student-life/our-services/greek-life/"><img class="img-responsive" src="gallery/vsu-logo.png"></a></div><p></p>
+                          
+                          </div>
+                    </div>
+                </div>
+            <!-- /.EXC -->
+            
+        </div>
+        <!-- /.END EXC -->
+            
+           
+       
+        <!-- /.row -->
+        
+        <!-- Footer -->
+    <div class=container>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Sigma Chi-Lambda Mu 2015</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
